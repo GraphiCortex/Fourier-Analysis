@@ -46,5 +46,4 @@ def animate(iter):
     return fFS_plot
 
 anim = animation.FuncAnimation(fig, animate, init_func=init, frames=1024, interval=50)
-HTML(anim.to_jshtml())  
-anim.save('animation.html', writer='html')
+HTML(anim.to_jshtml)
