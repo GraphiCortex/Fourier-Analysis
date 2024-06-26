@@ -26,8 +26,8 @@ u0hat = np.fft.fft(u0)
 u0hat_ri = np.concatenate((u0hat.real, u0hat.imag))
 
 # Simulate in Fourier frequency domain
-dt = 0.002
-t = np.arange(0, 500, dt)
+dt = 0.05
+t = np.arange(0, 20, dt)
 
 def rhsHeat(uhat_ri, t, kappa, a):
     uhat = uhat_ri[:N] + (1j) * uhat_ri[N:]
