@@ -38,6 +38,7 @@ for k in range(20):
     B[k] = np.sum(f * np.sin(np.pi * (k+1)*x/L)) * dx 
     fFS = fFS + A[k]* np.cos(np.pi * (k+1)*x/L) + B[k]* np.sin(np.pi * (k+1)*x/L)
     ax.plot(x, fFS, '-')
+
 plt.show()
 
 
